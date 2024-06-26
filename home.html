@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Store</title>
+    <style>
+      body {
+        background-color: rgb(0, 0, 0);
+      }
+      .head {
+        background-color: black;
+        color: white;
+        text-align: center;
+        align-content: center;
+        height: 70px;
+      }
+      .title {
+        font-family: cursive;
+        font-size: xx-large;
+      }
+      .nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: grey;
+        justify-content: space-around;
+        height: 40px;
+        text-align: center;
+        align-items: center;
+        font-family: helvetica;
+        font-weight: bold;
+        font-size: medium;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+        text-decoration: none;
+      }
+      a:active {
+        color: yellow;
+        text-decoration: none;
+      }
+      .layout {
+        border-radius: 30px;
+        margin-top: 30px;
+        border: solid;
+        width: 200px;
+        height: 310px;
+        box-shadow: 0px 0px 30px rgb(50, 50, 50);
+      }
+      .img {
+        width: 90%;
+        border-radius: 20px;
+        height: 190px;
+        margin-top: 10px;
+        margin-left: 9px;
+      }
+      .des {
+        width: 90%;
+        border-radius: 20px;
+        height: 90px;
+        margin-left: 9px;
+        margin-top: 10px;
+        text-align: center;
+        align-content: center;
+      }
+      .sc {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        row-gap: 5%;
+        column-gap: 10%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+      .tag {
+        font-family: verdana;
+        font-size: small;
+        font-weight: lighter;
+        text-align: center;
+        align-content: center;
+        color: rgb(190, 190, 190);
+        margin-top: 2px;
+      }
+      .brand {
+        font-family: arial;
+        font-size: medium;
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        color: white;
+      }
+      .discount {
+        font-family: helvetica;
+        font-weight: lighter;
+        font-size: small;
+        text-align: center;
+        align-content: center;
+        color: rgb(245, 245, 245);
+        margin: 2px;
+      }
+      .discounttag {
+        text-decoration: line-through;
+        color: red;
+      }
+      .price {
+        font-family: arial;
+        color: white;
+        font-size: small;
+        text-align: center;
+        align-content: center;
+      }
+      .pricetag {
+        color: white;
+        font-family: arial;
+        font-weight: bold;
+        font-size: x-large;
+        text-align: center;
+        align-content: center;
+      }
+      .ord {
+        position: relative;
+        background-color: yellow;
+        font-size: large;
+        width: 7%;
+        height: 90%;
+        border-radius: 25px;
+        align-content: center;
+        text-align: center;
+      }
+      .ord a:hover {
+        font-size: medium;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="head">
+        <span class="title"> Daily Essentials </span>
+      </div>
+      <div class="nav">
+        <span><a href="#">Home</a></span>
+        <span><a href="#">Grocery & Kitchen</a></span>
+        <span><a href="#">Snacks & Drinks</a></span>
+        <span><a href="#"> Beauty & Personal Care</a></span>
+        <span><a href="#">Household Essentials</a></span>
+        <span class="ord"><a href="#">Orders</a></span>
+      </div>
+      <div class="sc">
+        <div class="layout">
+          <div class="img">
+            <img
+              src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/671e4dbc2070146c4511a9495f4ae796"
+            />
+          </div>
+
+          <div class="des">
+            <div class="tag">
+              <div class="brand">Milton</div>
+              Hilex Bottle 1 L
+            </div>
+            <div class="discount">
+              M.R.P:<span class="discounttag">₹430</span>/1 Piece
+            </div>
+            <div class="price">₹<span class="pricetag">230</span></div>
+          </div>
+        </div>
+
+        <div class="layout">
+          <div class="img">
+            <img
+              src="https://cdn.zeptonow.com/production///tr:w-600,ar-1876-1876,pr-true,f-auto,q-80/inventory/product/8550c4d2-7d45-495a-add6-5d7d1562aa7e-17e6dz27sPRquTEgKIU0g9sJcevenjDgV.jpeg"
+            />
+          </div>
+          <div class="des">
+            <div class="tag">
+              <div class="brand">Arun</div>
+              Rajbhog Ice Cream Tub
+            </div>
+            <div class="discount">
+              M.R.P:<span class="discounttag">₹200</span>/500 ml
+            </div>
+            <div class="price">₹<span class="pricetag">190</span></div>
+          </div>
+        </div>
+        <div class="layout">
+          <div class="img">
+            <img
+              src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/NI_CATALOG/IMAGES/CIW/2024/4/5/885a7c7e-eb4d-4e39-941a-8ed839a5b6cd_shampoo_69L29J6823_MN.png"
+            />
+          </div>
+          <div class="des">
+            <div class="tag">
+              <div class="brand">Nyle</div>
+              Damage Repair Shampoo
+            </div>
+            <div class="discount">
+              M.R.P:<span class="discounttag">₹249</span>/400 ml
+            </div>
+            <div class="price">₹<span class="pricetag">224</span></div>
+          </div>
+        </div>
+        <div class="layout">
+          <div class="img">
+            <img
+              src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/2239fbc9246d3d7f0a25d6ebaaf0f68f"
+            />
+          </div>
+          <div class="des">
+            <div class="tag">
+              <div class="brand">Oral B</div>
+              Electric Toothbrush
+            </div>
+            <div class="discount">
+              M.R.P:<span class="discounttag">₹599</span>/Pack of 1
+            </div>
+            <div class="price">₹<span class="pricetag">557</span></div>
+          </div>
+        </div>
+        <div class="layout">
+          <div class="img">
+            <img
+              src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/NI_CATALOG/IMAGES/CIW/2024/4/19/6ee55391-293e-4694-8dc8-1477c2a40257_soapsandbodywash_3MI4XBZEKT_MN.png"
+            />
+          </div>
+          <div class="des">
+            <div class="tag">
+              <div class="brand">Dove</div>
+              Cream Beauty Bar
+            </div>
+            <div class="discount">
+              M.R.P:<span class="discounttag">₹262</span>/Pack of 3
+            </div>
+            <div class="price">₹<span class="pricetag">220</span></div>
+          </div>
+        </div>
+        <div class="layout">
+          <div class="img">
+            <img
+              src="https://d2md07pas2ip5w.cloudfront.net/media/catalog/product/G/H/GHBKTATB150_0.jpg?auto=webp&format=pjpg"
+            />
+          </div>
+          <div class="des">
+            <div class="tag">
+              <div class="brand">Havells</div>
+              Electric Kettle
+            </div>
+            <div class="discount">
+              M.R.P:<span class="discounttag">₹2995</span>/1.2 liters
+            </div>
+            <div class="price">₹<span class="pricetag">1,496</span></div>
+          </div>
+        </div>
+        <div class="layout">
+          <div class="img">
+            <img
+              src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/5/8/a41d2e74-96c3-40fb-989d-a68ad6912d88_chipsnachosandpopcorn_XHYU8ODVG3_MN.png"
+            />
+          </div>
+
+          <div class="des">
+            <div class="tag">
+              <div class="brand">Lay's</div>
+              India's Magic Masala
+            </div>
+            <div class="discount">
+              M.R.P:<span class="discounttag">₹50</span>/90 gm
+            </div>
+            <div class="price">₹<span class="pricetag">45</span></div>
+          </div>
+        </div>
+        <div class="layout">
+          <div class="img">
+            <img
+              src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/wz11qw4zqtdrilk7v2rp"
+            />
+          </div>
+
+          <div class="des">
+            <div class="tag">
+              <div class="brand">Red Bull</div>
+              Energy Drink
+            </div>
+            <div class="discount">
+              M.R.P:<span class="discounttag">₹165</span>/350 ml
+            </div>
+            <div class="price">₹<span class="pricetag">145</span></div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+    </div>
+  </body>
+</html>
